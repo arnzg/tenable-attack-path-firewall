@@ -1,0 +1,1055 @@
+{
+ "device": {
+  "hostname": "FGLAB-EDGE-01",
+  "model": "FortiGate-200F (simulated)",
+  "os_version": "FortiOS 7.4.5",
+  "serial": "FGSIM000000000000",
+  "vdoms": [
+   "root"
+  ]
+ },
+ "interfaces": [
+  {
+   "name": "port1",
+   "alias": "WAN-Uplink",
+   "zone": "external",
+   "ip": "203.0.113.2/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port2",
+   "alias": "DMZ",
+   "zone": "dmz",
+   "ip": "10.20.0.1/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port3",
+   "alias": "USERS",
+   "zone": "users",
+   "ip": "192.168.16.1/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port4",
+   "alias": "SERVERS",
+   "zone": "servers",
+   "ip": "192.168.15.1/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port5",
+   "alias": "APPS",
+   "zone": "apps",
+   "ip": "192.168.42.1/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port6",
+   "alias": "CORE",
+   "zone": "core",
+   "ip": "10.10.0.1/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port7",
+   "alias": "MGMT",
+   "zone": "mgmt",
+   "ip": "10.50.0.1/24",
+   "status": "up",
+   "type": "physical"
+  },
+  {
+   "name": "port8",
+   "alias": "OT-FLAT",
+   "zone": "ot",
+   "ip": "192.168.10.1/24",
+   "status": "up",
+   "type": "physical"
+  }
+ ],
+ "addresses": [
+  {
+   "name": "external-any",
+   "type": "network",
+   "value": "0.0.0.0/0"
+  },
+  {
+   "name": "users-all",
+   "type": "network",
+   "value": "192.168.16.0/24"
+  },
+  {
+   "name": "apps-all",
+   "type": "network",
+   "value": "192.168.42.0/24"
+  },
+  {
+   "name": "www.testfire.net",
+   "type": "host",
+   "value": "10.20.0.10"
+  },
+  {
+   "name": "demo.testfire.net",
+   "type": "host",
+   "value": "10.20.0.11"
+  },
+  {
+   "name": "ginandjuice.shop",
+   "type": "host",
+   "value": "10.20.0.12"
+  },
+  {
+   "name": "DC1",
+   "type": "host",
+   "value": "10.10.0.11"
+  },
+  {
+   "name": "ln-dc",
+   "type": "host",
+   "value": "10.10.0.12"
+  },
+  {
+   "name": "ln-dc-2",
+   "type": "host",
+   "value": "10.10.0.13"
+  },
+  {
+   "name": "se-dc2",
+   "type": "host",
+   "value": "10.10.0.14"
+  },
+  {
+   "name": "tenable-ad-sen",
+   "type": "host",
+   "value": "10.10.0.15"
+  },
+  {
+   "name": "tenable-ad-dl",
+   "type": "host",
+   "value": "10.10.0.16"
+  },
+  {
+   "name": "TENADLAB",
+   "type": "host",
+   "value": "10.10.0.17"
+  },
+  {
+   "name": "srv1",
+   "type": "host",
+   "value": "192.168.15.10"
+  },
+  {
+   "name": "sql",
+   "type": "host",
+   "value": "192.168.15.20"
+  },
+  {
+   "name": "sccm",
+   "type": "host",
+   "value": "192.168.15.30"
+  },
+  {
+   "name": "archie",
+   "type": "host",
+   "value": "192.168.15.50"
+  },
+  {
+   "name": "secure-relay-cd",
+   "type": "host",
+   "value": "192.168.15.60"
+  },
+  {
+   "name": "vulnscanner",
+   "type": "host",
+   "value": "10.50.0.5"
+  },
+  {
+   "name": "WIN10-JUMP-BOX",
+   "type": "host",
+   "value": "10.50.0.10"
+  },
+  {
+   "name": "unifi.blockdevice.lab",
+   "type": "host",
+   "value": "192.168.10.10"
+  },
+  {
+   "name": "esxi.blockdevice.lab",
+   "type": "host",
+   "value": "192.168.10.20"
+  },
+  {
+   "name": "sonyaudio.blockdevice.lab",
+   "type": "host",
+   "value": "192.168.10.30"
+  },
+  {
+   "name": "u6lr.blockdevice.lab",
+   "type": "host",
+   "value": "192.168.10.40"
+  },
+  {
+   "name": "WIN11",
+   "type": "host",
+   "value": "192.168.16.55"
+  },
+  {
+   "name": "al-win10-dev",
+   "type": "host",
+   "value": "192.168.16.61"
+  },
+  {
+   "name": "shane",
+   "type": "host",
+   "value": "192.168.16.70"
+  },
+  {
+   "name": "adam",
+   "type": "host",
+   "value": "192.168.16.71"
+  },
+  {
+   "name": "jim",
+   "type": "host",
+   "value": "192.168.16.72"
+  },
+  {
+   "name": "josh",
+   "type": "host",
+   "value": "192.168.16.73"
+  },
+  {
+   "name": "JOSH",
+   "type": "host",
+   "value": "192.168.16.74"
+  },
+  {
+   "name": "brian",
+   "type": "host",
+   "value": "192.168.16.75"
+  },
+  {
+   "name": "MILES",
+   "type": "host",
+   "value": "192.168.16.76"
+  },
+  {
+   "name": "seth",
+   "type": "host",
+   "value": "192.168.15.70"
+  }
+ ],
+ "services": [
+  {
+   "name": "WEB",
+   "protocol": "tcp",
+   "ports": [
+    80,
+    443
+   ]
+  },
+  {
+   "name": "HTTP",
+   "protocol": "tcp",
+   "ports": [
+    80
+   ]
+  },
+  {
+   "name": "HTTPS",
+   "protocol": "tcp",
+   "ports": [
+    443
+   ]
+  },
+  {
+   "name": "RDP",
+   "protocol": "tcp",
+   "ports": [
+    3389
+   ]
+  },
+  {
+   "name": "SMB",
+   "protocol": "tcp",
+   "ports": [
+    445
+   ]
+  },
+  {
+   "name": "MSRPC",
+   "protocol": "tcp",
+   "ports": [
+    135
+   ]
+  },
+  {
+   "name": "KERBEROS",
+   "protocol": "tcp",
+   "ports": [
+    88,
+    464
+   ]
+  },
+  {
+   "name": "WINRM",
+   "protocol": "tcp",
+   "ports": [
+    5985,
+    5986
+   ]
+  },
+  {
+   "name": "SSH",
+   "protocol": "tcp",
+   "ports": [
+    22
+   ]
+  },
+  {
+   "name": "NTP",
+   "protocol": "udp",
+   "ports": [
+    123
+   ]
+  },
+  {
+   "name": "DNS",
+   "protocol": "tcp",
+   "ports": [
+    53
+   ]
+  },
+  {
+   "name": "ALL",
+   "protocol": "any",
+   "ports": [
+    0
+   ]
+  }
+ ],
+ "policies": [
+  {
+   "id": 1,
+   "name": "Mgmt-Vulnscanner-to-Servers",
+   "srcintf": [
+    "mgmt"
+   ],
+   "dstintf": [
+    "servers"
+   ],
+   "srcaddr": [
+    "vulnscanner"
+   ],
+   "dstaddr": [
+    "srv1",
+    "sql",
+    "sccm",
+    "archie",
+    "secure-relay-cd",
+    "seth"
+   ],
+   "service": [
+    "HTTPS",
+    "SMB",
+    "SSH"
+   ],
+   "action": "allow",
+   "log": true,
+   "status": true,
+   "comment": "Vulnerability management reach - NOTE: SMB access from scanner is over-broad"
+  },
+  {
+   "id": 2,
+   "name": "Mgmt-to-Apps",
+   "srcintf": [
+    "mgmt"
+   ],
+   "dstintf": [
+    "apps"
+   ],
+   "srcaddr": [
+    "vulnscanner"
+   ],
+   "dstaddr": [
+    "apps-all"
+   ],
+   "service": [
+    "HTTPS"
+   ],
+   "action": "allow",
+   "log": true,
+   "status": true,
+   "comment": "Scanner to app VLAN"
+  },
+  {
+   "id": 3,
+   "name": "Users-to-JumpBox-RDP",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "mgmt"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "WIN10-JUMP-BOX"
+   ],
+   "service": [
+    "RDP"
+   ],
+   "action": "allow",
+   "log": true,
+   "status": true,
+   "comment": "Admin workstation RDP to jump box"
+  },
+  {
+   "id": 4,
+   "name": "Users-to-Apps-Web",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "apps"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "apps-all"
+   ],
+   "service": [
+    "WEB"
+   ],
+   "action": "allow",
+   "log": false,
+   "status": true,
+   "comment": "Business apps"
+  },
+  {
+   "id": 5,
+   "name": "Users-to-Servers-Web",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "servers"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "servers-all"
+   ],
+   "service": [
+    "WEB"
+   ],
+   "action": "allow",
+   "log": false,
+   "status": true,
+   "comment": "Internal web apps"
+  },
+  {
+   "id": 6,
+   "name": "Users-to-Core-Kerberos",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "core"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "DC1",
+    "ln-dc",
+    "ln-dc-2",
+    "se-dc2",
+    "tenable-ad-sen",
+    "tenable-ad-dl",
+    "TENADLAB"
+   ],
+   "service": [
+    "KERBEROS"
+   ],
+   "action": "allow",
+   "log": false,
+   "status": true,
+   "comment": "Domain auth only - no admin protocols"
+  },
+  {
+   "id": 7,
+   "name": "Block-Workstation-Lateral",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "core"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "core-all"
+   ],
+   "service": [
+    "RDP",
+    "WINRM",
+    "SMB",
+    "MSRPC"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "Security control: no lateral movement from workstations to domain controllers"
+  },
+  {
+   "id": 8,
+   "name": "Apps-to-Servers-SMB",
+   "srcintf": [
+    "apps"
+   ],
+   "dstintf": [
+    "servers"
+   ],
+   "srcaddr": [
+    "apps-all"
+   ],
+   "dstaddr": [
+    "srv1",
+    "seth"
+   ],
+   "service": [
+    "SMB",
+    "HTTPS"
+   ],
+   "action": "allow",
+   "log": false,
+   "status": true,
+   "comment": "Legacy flat file access - over-permissive SMB"
+  },
+  {
+   "id": 9,
+   "name": "Servers-to-Core-AD",
+   "srcintf": [
+    "servers"
+   ],
+   "dstintf": [
+    "core"
+   ],
+   "srcaddr": [
+    "servers-all"
+   ],
+   "dstaddr": [
+    "core-all"
+   ],
+   "service": [
+    "KERBEROS",
+    "MSRPC",
+    "SMB"
+   ],
+   "action": "allow",
+   "log": false,
+   "status": true,
+   "comment": "Domain-joined server AD traffic"
+  },
+  {
+   "id": 10,
+   "name": "Block-Server-RDP-to-Core",
+   "srcintf": [
+    "servers"
+   ],
+   "dstintf": [
+    "core"
+   ],
+   "srcaddr": [
+    "servers-all"
+   ],
+   "dstaddr": [
+    "core-all"
+   ],
+   "service": [
+    "RDP"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "No RDP from servers to DCs"
+  },
+  {
+   "id": 11,
+   "name": "Block-DMZ-Internal",
+   "srcintf": [
+    "dmz"
+   ],
+   "dstintf": [
+    "core",
+    "servers",
+    "users",
+    "mgmt",
+    "apps"
+   ],
+   "srcaddr": [
+    "dmz-all"
+   ],
+   "dstaddr": [
+    "core-all",
+    "servers-all",
+    "users-all",
+    "apps-all"
+   ],
+   "service": [
+    "ALL"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "DMZ isolation - compromised web server cannot reach internal"
+  },
+  {
+   "id": 12,
+   "name": "Web-to-DMZ",
+   "srcintf": [
+    "external"
+   ],
+   "dstintf": [
+    "dmz"
+   ],
+   "srcaddr": [
+    "external-any"
+   ],
+   "dstaddr": [
+    "www.testfire.net",
+    "demo.testfire.net",
+    "ginandjuice.shop"
+   ],
+   "service": [
+    "WEB"
+   ],
+   "action": "allow",
+   "log": true,
+   "status": true,
+   "comment": "Public web publishing"
+  },
+  {
+   "id": 13,
+   "name": "Block-External-All-Else",
+   "srcintf": [
+    "external"
+   ],
+   "dstintf": [
+    "dmz",
+    "core",
+    "servers",
+    "users",
+    "mgmt",
+    "apps",
+    "ot"
+   ],
+   "srcaddr": [
+    "external-any"
+   ],
+   "dstaddr": [
+    "all-internal"
+   ],
+   "service": [
+    "ALL"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "Default external deny"
+  },
+  {
+   "id": 14,
+   "name": "Block-Internal-to-OT",
+   "srcintf": [
+    "users",
+    "servers",
+    "apps",
+    "mgmt",
+    "dmz"
+   ],
+   "dstintf": [
+    "ot"
+   ],
+   "srcaddr": [
+    "users-all",
+    "servers-all",
+    "apps-all",
+    "dmz-all"
+   ],
+   "dstaddr": [
+    "ot-all"
+   ],
+   "service": [
+    "ALL"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "OT segmentation - no IT to OT traffic"
+  },
+  {
+   "id": 15,
+   "name": "Admin-WKS-Mgmt-Any",
+   "srcintf": [
+    "mgmt"
+   ],
+   "dstintf": [
+    "core",
+    "servers",
+    "users",
+    "apps"
+   ],
+   "srcaddr": [
+    "WIN10-JUMP-BOX"
+   ],
+   "dstaddr": [
+    "core-all",
+    "servers-all",
+    "users-all",
+    "apps-all"
+   ],
+   "service": [
+    "ALL"
+   ],
+   "action": "allow",
+   "log": true,
+   "status": true,
+   "comment": "Jump box broad admin reach - accepted risk: ANY service allowed from the jump box (SIGNED-OFF EXCEPTION)"
+  },
+  {
+   "id": 16,
+   "name": "Block-Workstation-Lateral-SameVLAN",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "users"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "users-all"
+   ],
+   "service": [
+    "RDP",
+    "WINRM",
+    "SMB",
+    "MSRPC"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "SOC policy: no workstation-to-workstation admin protocols - lateral movement between endpoints is blocked at the firewall"
+  },
+  {
+   "id": 17,
+   "name": "Block-Server-Lateral-Admin",
+   "srcintf": [
+    "servers"
+   ],
+   "dstintf": [
+    "servers"
+   ],
+   "srcaddr": [
+    "servers-all"
+   ],
+   "dstaddr": [
+    "servers-all"
+   ],
+   "service": [
+    "RDP",
+    "WINRM",
+    "SMB",
+    "MSRPC"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "SOC policy: no server-to-server admin protocols; administration goes through the jump box"
+  },
+  {
+   "id": 18,
+   "name": "Block-Apps-to-DC-Admin",
+   "srcintf": [
+    "apps"
+   ],
+   "dstintf": [
+    "core"
+   ],
+   "srcaddr": [
+    "apps-all"
+   ],
+   "dstaddr": [
+    "core-all"
+   ],
+   "service": [
+    "RDP",
+    "WINRM",
+    "SMB",
+    "MSRPC"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "App servers must never administer domain controllers"
+  },
+  {
+   "id": 19,
+   "name": "Block-Users-to-Servers-Admin",
+   "srcintf": [
+    "users"
+   ],
+   "dstintf": [
+    "servers"
+   ],
+   "srcaddr": [
+    "users-all"
+   ],
+   "dstaddr": [
+    "servers-all"
+   ],
+   "service": [
+    "RDP",
+    "WINRM",
+    "SMB",
+    "MSRPC"
+   ],
+   "action": "deny",
+   "log": true,
+   "status": true,
+   "comment": "Admin protocols from workstations to servers go via the jump box only"
+  }
+ ],
+ "address_groups": {
+  "users-all": [
+   "users-all"
+  ],
+  "servers-all": [
+   "srv1",
+   "sql",
+   "sccm",
+   "archie",
+   "secure-relay-cd",
+   "seth"
+  ],
+  "core-all": [
+   "DC1",
+   "ln-dc",
+   "ln-dc-2",
+   "se-dc2",
+   "tenable-ad-sen",
+   "tenable-ad-dl",
+   "TENADLAB"
+  ],
+  "dmz-all": [
+   "www.testfire.net",
+   "demo.testfire.net",
+   "ginandjuice.shop"
+  ],
+  "ot-all": [
+   "unifi.blockdevice.lab",
+   "esxi.blockdevice.lab",
+   "sonyaudio.blockdevice.lab",
+   "u6lr.blockdevice.lab"
+  ],
+  "all-internal": [
+   "core-all",
+   "servers-all",
+   "users-all",
+   "apps-all",
+   "ot-all",
+   "dmz-all"
+  ]
+ },
+ "default_deny": true,
+ "edr_coverage": {
+  "simulated": true,
+  "note": "DEMONSTRATION DATA - zone-based EDR deployment model; production deployments supply real connector sources (see SKILL.md edr_sources)",
+  "zone_coverage": {
+   "core": {
+    "vendor": "SentinelOne",
+    "coverage": 1.0
+   },
+   "servers": {
+    "vendor": "SentinelOne",
+    "coverage": 0.9
+   },
+   "users": {
+    "vendor": "SentinelOne",
+    "coverage": 0.5
+   }
+  }
+ },
+ "asset_zone_rules": [
+  {
+   "match": "domain_controller",
+   "zone": "core",
+   "names": [
+    "dc1",
+    "dc2",
+    "ln-dc",
+    "ln-dc-2",
+    "se-dc2",
+    "tenable-ad-sen",
+    "tenable-ad-dl",
+    "tenadlab"
+   ]
+  },
+  {
+   "match": "name_suffix",
+   "zone": "servers",
+   "names": [
+    "srv1",
+    "sql",
+    "sccm",
+    "archie",
+    "secure-relay-cd",
+    "seth"
+   ]
+  },
+  {
+   "match": "name_suffix",
+   "zone": "mgmt",
+   "names": [
+    "vulnscanner",
+    "win10-jump-box",
+    "tenable-8w35fm8x",
+    "tenable-n8jt2pwk",
+    "maria-vm-scanner"
+   ]
+  },
+  {
+   "match": "name_suffix",
+   "zone": "dmz",
+   "names": [
+    "www.testfire.net",
+    "demo.testfire.net",
+    "ginandjuice.shop"
+   ]
+  },
+  {
+   "match": "name_suffix",
+   "zone": "ot",
+   "names": [
+    "unifi.blockdevice.lab",
+    "esxi.blockdevice.lab",
+    "sonyaudio.blockdevice.lab",
+    "u6lr.blockdevice.lab",
+    "homebridge",
+    "royalserver",
+    "truenas"
+   ]
+  },
+  {
+   "match": "suffix_re",
+   "zone": "servers",
+   "suffixes": [
+    "(web|apps|vir|dbas|secs)\\d+$"
+   ]
+  },
+  {
+   "match": "suffix_re",
+   "zone": "users",
+   "suffixes": [
+    "(wks|lpt|ctrx)\\d+$"
+   ]
+  },
+  {
+   "match": "suffix_re",
+   "zone": "servers",
+   "suffixes": [
+    "production-real\\.fr$"
+   ]
+  },
+  {
+   "match": "name_suffix",
+   "zone": "users",
+   "names": [
+    "win11",
+    "shane",
+    "jim",
+    "josh",
+    "josh",
+    "miles",
+    "assises-mac01",
+    "assises-mac02",
+    "adam",
+    "brian",
+    "chris",
+    "carlos",
+    "denise",
+    "alice.demo.io",
+    "domingo",
+    "rita-lpt",
+    "macos1014",
+    "cabin-desktop",
+    "jon's m4 mac mini",
+    "dir-win11-fleet",
+    "dir-win10-eng",
+    "dir-win10-info",
+    "carlos.demo.io",
+    "denise.demo.io",
+    "al-win10-dev",
+    "mgr-win11-prod",
+    "vp-win11-info",
+    "al-win11-ma",
+    "ex-empire-04",
+    "ln-pm-relay.labnet.local"
+   ]
+  },
+  {
+   "match": "subnet",
+   "zone": "users",
+   "cidr": "192.168.16.0/24"
+  },
+  {
+   "match": "subnet",
+   "zone": "servers",
+   "cidr": "192.168.15.0/24"
+  },
+  {
+   "match": "subnet",
+   "zone": "apps",
+   "cidr": "192.168.42.0/24"
+  },
+  {
+   "match": "subnet",
+   "zone": "ot",
+   "cidr": "192.168.10.0/24"
+  },
+  {
+   "match": "subnet",
+   "zone": "dmz",
+   "cidr": "10.20.0.0/24"
+  },
+  {
+   "match": "subnet",
+   "zone": "core",
+   "cidr": "10.10.0.0/24"
+  },
+  {
+   "match": "subnet",
+   "zone": "mgmt",
+   "cidr": "10.50.0.0/24"
+  },
+  {
+   "match": "default",
+   "zone": "external",
+   "comment": "unmapped endpoints (unknown subnets, cloud VPCs) sit outside the internal zones"
+  }
+ ]
+}
